@@ -64,11 +64,19 @@
 
 // Questão 7:
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let menor = 100000;
-for (let index = 0; index < numbers.length - 1; index += 1) {
-    if (numbers[index] < menor) {
-        menor = numbers[index];
-    }
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let menor = 100000;
+// for (let index = 0; index < numbers.length - 1; index += 1) {
+//     if (numbers[index] < menor) {
+//         menor = numbers[index];
+//     }
+// }
+// console.log(menor);
+
+// Questão 8:
+
+let contador1 = [];
+for (let index = 1; index < 26; index += 1) {
+    contador1.push(index);
 }
-console.log(menor);
+console.log(contador1[24]);
