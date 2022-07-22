@@ -75,8 +75,18 @@
 
 // Questão 8:
 
+// let contador1 = [];
+// for (let index = 1; index < 26; index += 1) {
+//     contador1.push(index);
+// }
+// console.log(contador1[24]);
+
+// Questão 9:
+
 let contador1 = [];
 for (let index = 1; index < 26; index += 1) {
     contador1.push(index);
 }
-console.log(contador1[24]);
+for (let contador of contador1) {
+    console.log(contador / 2);
+}
