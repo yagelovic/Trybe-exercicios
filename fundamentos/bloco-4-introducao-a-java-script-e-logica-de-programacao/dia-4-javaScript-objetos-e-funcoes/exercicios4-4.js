@@ -14,5 +14,6 @@ let player = {
     }
 }
 
-console.log("A jogadora " + player['nome'] + ' ' + player['lastName'] + ' tem ' + player['age'] + ' anos de idade.' )
-console.log("A jogadora " + player['nome'] + ' ' + player['lastName'] + ' foi eleita a melhor do mundo por ' + player.bestInTheWorld.length + ' vezes.')
+console.log('A jogadora ' + player['nome'] + ' ' + player['lastName'] + ' tem ' + player['age'] + ' anos de idade.' );
+console.log('A jogadora ' + player['nome'] + ' ' + player['lastName'] + ' foi eleita a melhor do mundo por ' + player.bestInTheWorld.length + ' vezes.');
+console.log('A jogadora ' + player['nome'] + ' ' + player['lastName'] + ' possui ' + player['medals']['golden'] + ' medalhas de ouro e ' + player['medals']['silver'] + ' medalhas de prata');
