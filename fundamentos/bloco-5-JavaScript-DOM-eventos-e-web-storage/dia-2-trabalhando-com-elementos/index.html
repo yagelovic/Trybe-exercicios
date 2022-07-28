@@ -1,76 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Exercício 5.2</title>
     <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
+        section {
+            border-color: black;
+            border-style: solid;
+        }
 
-      .title {
-        text-align: center;
-      }
+        .title {
+            text-align: center;
+        }
 
-      .main-content {
-        background-color: yellow;
-      }
+        .main-content {
+            background-color: yellow;
+        }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
+        .main-content .center-content p {
+            font-style: italic;
+        }
 
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
 
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
 
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
 
-      .main-content .description {
-        text-align: center;
-      }
+        .main-content .description {
+            text-align: center;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
-      // Criando uma constanto que recebe o valor de body
-      const pai = document.getElementsByTagName('body')[0];
-      let texto = document.createElement('h1');
-      texto.innerHTML = 'Exercício 5.2 - JavaScript DOM';
-      console.log(pai);
-      console.log(texto);
-      pai.appendChild(texto);
-      const pai2 = document.getElementsByTagName('body')[0];
-      let conteudo = document.createElement('main');
-      conteudo.className = 'main-content';
-      pai2.appendChild(conteudo);
-      console.log(pai2);
-      console.log(conteudo);
-      </script>
-  </body>
+        // COLOQUE SEU CÓDIGO AQUI
+        // Criando uma constanto que recebe o valor de body
+        const pai = document.getElementsByTagName('body')[0];
+        let texto = document.createElement('h1');
+        texto.innerHTML = 'Exercício 5.2 - JavaScript DOM';
+        console.log(pai);
+        console.log(texto);
+        pai.appendChild(texto);
+        const pai2 = document.getElementsByTagName('body')[0];
+        let conteudo = document.createElement('main');
+        conteudo.className = 'main-content';
+        pai2.appendChild(conteudo);
+        console.log(pai2);
+        console.log(conteudo);
+        const conteudoRecebe = document.getElementsByTagName('main')[0];
+        let secao1 = document.createElement('section');
+        secao1.className = 'center-content';
+        conteudoRecebe.appendChild(secao1);
+        console.log(conteudoRecebe);
+        console.log(secao1);
+        const secao1Recebe = document.getElementsByClassName('center-content')[0];
+        let paragraph = document.createElement('p');
+        secao1Recebe.appendChild(paragraph);
+    </script>
+</body>
+
 </html>
