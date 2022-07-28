@@ -60,32 +60,40 @@
 <body>
     <script>
         // COLOQUE SEU CÓDIGO AQUI
-        // Criando uma constanto que recebe o valor de body
+        // Questão 1
         const pai = document.getElementsByTagName('body')[0];
         let texto = document.createElement('h1');
         texto.innerHTML = 'Exercício 5.2 - JavaScript DOM';
         console.log(pai);
         console.log(texto);
         pai.appendChild(texto);
+        // Questão 2
         const pai2 = document.getElementsByTagName('body')[0];
         let conteudo = document.createElement('main');
         conteudo.className = 'main-content';
         pai2.appendChild(conteudo);
         console.log(pai2);
         console.log(conteudo);
+        // Questão 3
         const conteudoRecebe = document.getElementsByTagName('main')[0];
         let secao1 = document.createElement('section');
         secao1.className = 'center-content';
         conteudoRecebe.appendChild(secao1);
         console.log(conteudoRecebe);
         console.log(secao1);
+        // Questão 4
         const secao1Recebe = document.getElementsByClassName('center-content')[0];
         let paragraph = document.createElement('p');
         secao1Recebe.appendChild(paragraph);
         paragraph.innerText ='lorem ipsum';
+        // Questão 5
         let secao2 = document.createElement('section');
         secao2.className = 'left-content';
         conteudoRecebe.appendChild(secao2);
+        // Questão 6
+        let secao3 = document.createElement('section');
+        secao3.className = 'right-content';
+        conteudoRecebe.appendChild(secao3);
     </script>
 </body>
 
