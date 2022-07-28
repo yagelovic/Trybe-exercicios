@@ -85,7 +85,7 @@
         const secao1Recebe = document.getElementsByClassName('center-content')[0];
         let paragraph = document.createElement('p');
         secao1Recebe.appendChild(paragraph);
-        paragraph.innerText ='lorem ipsum';
+        paragraph.innerText = 'lorem ipsum';
         // Questão 5
         let secao2 = document.createElement('section');
         secao2.className = 'left-content';
@@ -94,6 +94,47 @@
         let secao3 = document.createElement('section');
         secao3.className = 'right-content';
         conteudoRecebe.appendChild(secao3);
+        // Questão 7
+        const secao2Recebe = document.getElementsByClassName('left-content')[0];
+        let imagem = document.createElement('img');
+        imagem.className = 'small-image';
+        imagem.setAttribute("src", "https://picsum.photos/200"); //https://www.w3schools.com/jsref/dom_obj_image.asp
+        secao2Recebe.appendChild(imagem);
+        // Questão 8
+        const secao3Recebe = document.getElementsByClassName('right-content')[0];
+        let lista = document.createElement('ul');
+        secao3Recebe.appendChild(lista);
+        const listaRecebe = document.getElementsByTagName('ul')[0];
+        let um = document.createElement('li');
+        um.innerText = 'Um';
+        let dois = document.createElement('li');
+        dois.innerText = 'Dois';
+        let tres = document.createElement('li');
+        tres.innerText = 'Três';
+        let quatro = document.createElement('li');
+        quatro.innerText = 'Quatro';
+        let cinco = document.createElement('li');
+        cinco.innerText = 'Cinco';
+        let seis = document.createElement('li');
+        seis.innerText = 'Seis';
+        let sete = document.createElement('li');
+        sete.innerText = 'Sete';
+        let oito = document.createElement('li');
+        oito.innerText = 'Oito';
+        let nove = document.createElement('li');
+        nove.innerText = 'Nove';
+        let dez = document.createElement('li');
+        dez.innerText = 'Dez';
+        listaRecebe.appendChild(um);
+        listaRecebe.appendChild(dois);
+        listaRecebe.appendChild(tres);
+        listaRecebe.appendChild(quatro);
+        listaRecebe.appendChild(cinco);
+        listaRecebe.appendChild(seis);
+        listaRecebe.appendChild(sete);
+        listaRecebe.appendChild(oito);
+        listaRecebe.appendChild(nove);
+        listaRecebe.appendChild(dez);
     </script>
 </body>
 
